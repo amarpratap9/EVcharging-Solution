@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpline</title>
+    <style>
+        body {
+            /*background-image: url('contact1.jpg');  Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+  background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: skyblue;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #0c0101;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: blue;
+        }
+        tr{
+            background-color: aqua;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+       
+button {
+    background-color: #007BFF;
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer;
+    border: none; 
+    border-radius: 5px; 
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+
+    <h2>Emergency Helpline</h2>
+
+    <section>
+        <h3>State-wise Helpline Numbers</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>State</th>
+                    <th>Helpline Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Delhi</td>
+                    <td>011-xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>Police</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Ambulance</td>
+                    <td>102</td>
+                </tr>
+                <tr>
+                    <td>Fire</td>
+                    <td>101</td>
+                </tr>
+                <!-- Add more rows for other states -->
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h3>Medical Helpline</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Helpline Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>COVID-19 Helpline</td>
+                    <td>1075</td>
+                </tr>
+                <tr>
+                    <td>AIIMS 24x7 Helpline</td>
+                    <td>011-26593308</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Government Services</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Helpline Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Women Helpline</td>
+                    <td>1091</td>
+                </tr>
+                <tr>
+                    <td>Child Helpline</td>
+                    <td>1098</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Contact Form</h3>
+        <form action="/contact" method="post" id="contactForm"  >
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="vehicleNumber">Vehicle Number:</label>
+            <input type="text" id="vehicleNumber" name="vehicleNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button>Submit</button>
+        </form>
+    </section>
+</body>
+</html>

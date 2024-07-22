@@ -1,0 +1,57 @@
+body {
+  background-image: url('download.jpeg'); /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif; /* You can change the font family if needed */
+  color: #333; /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #fff; /* Header text color */
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Form background color with opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #007BFF; /* Submit button background color */
+  color: #fff; /* Submit button text color */
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Hover state background color */
+}
+
+.charging-result {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Result section background color with opacity */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+.charging-result h1{
+  color: black;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charging Information</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/plan.css') }}"> 
+</head>
+<body>
+    <h1>Travel Information</h1>
+    <form method="post" action="/">
+        <label for="distance">Distance Traveled (in Km):</label>
+        <input type="text" name="distance" required>
+        <br>
+        <label for="battery">Battery Percentage:</label>
+        <input type="text" name="battery" required>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
+    <div class="charging-result">
+    <h1>Calculate Result</h1>
+    <p>Distance Traveled: {{ distance }} km</p>
+    <p>Battery Percentage: {{ battery_percentage }}%</p>
+    <p>Number of Charges Needed: {{ number_of_charges }}</p>
+    <p>Price to Use in Charging: Rs.{{ price_to_use }}</p>
+    <p>Time Taken: {{ time_taken }} hours</p>
+    </div>
+</body>
+</html>
